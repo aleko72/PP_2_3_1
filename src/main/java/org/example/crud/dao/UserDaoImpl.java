@@ -1,12 +1,12 @@
 package org.example.crud.dao;
 
 import org.example.crud.models.User;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
+@Repository
 public class UserDaoImpl implements UserDao{
 
     private static int USER_ID = 0;

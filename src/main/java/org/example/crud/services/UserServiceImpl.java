@@ -2,16 +2,19 @@ package org.example.crud.services;
 
 import org.example.crud.dao.UserDao;
 import org.example.crud.models.User;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Component
+@Service
 public class UserServiceImpl implements UserService{
 
-    @Autowired
-    private UserDao userDao;
+    private final UserDao userDao;
+
+    public UserServiceImpl(@Qualifier("userDaoDbImpl") UserDao userDao) {
+        this.userDao = userDao;
+    }
 
     @Override
     public List<User> getUsers() {
