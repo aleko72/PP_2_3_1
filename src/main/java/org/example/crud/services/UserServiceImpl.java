@@ -2,8 +2,9 @@ package org.example.crud.services;
 
 import org.example.crud.dao.UserDao;
 import org.example.crud.models.User;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -12,7 +13,8 @@ public class UserServiceImpl implements UserService{
 
     private final UserDao userDao;
 
-    public UserServiceImpl(@Qualifier("userDaoDbImpl") UserDao userDao) {
+    @Autowired
+    public UserServiceImpl(UserDao userDao) {
         this.userDao = userDao;
     }
 
@@ -27,17 +29,20 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
+    @Transactional
     public void save(User user) {
         userDao.save(user);
     }
 
     @Override
-    public void update(int id, User user) {
+    @Transactional
+    public void update(long id, User user) {
         userDao.update(id, user);
     }
 
     @Override
-    public void delete(int id) {
+    @Transactional
+    public void delete(long id) {
         userDao.delete(id);
     }
 }

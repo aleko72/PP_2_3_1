@@ -9,19 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec1ee2bc-b7a2-48ee-8984-4eded5860a33" name="Changes" comment="Add entityManagerFactory">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/crud/dao/UserDaoDbImpl.java" afterDir="false" />
+    <list default="true" id="ec1ee2bc-b7a2-48ee-8984-4eded5860a33" name="Changes" comment="task_2.3.1_v1">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/crud/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/crud/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/crud/config/AppInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/crud/config/AppInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/crud/config/DBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/crud/config/DBConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/crud/controllers/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/crud/controllers/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/crud/dao/UserDaoDbImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/crud/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/crud/dao/UserDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/crud/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/crud/models/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/crud/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/crud/services/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users/show.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,9 +66,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.396903"
+    "project.structure.side.proportion": "0.396903",
+    "spring.configuration.checksum": "015890f1d2cfd8f8910e3fcc7ee1f4fc"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -179,7 +182,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684903835546</updated>
-      <workItem from="1684903837046" duration="22276000" />
+      <workItem from="1684903837046" duration="27124000" />
+      <workItem from="1685036805799" duration="342000" />
     </task>
     <task id="LOCAL-00001" summary="Init mvc app">
       <created>1684904939940</created>
@@ -202,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684919845964</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Final, two daoUser">
+      <created>1684939037915</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684939037915</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +234,8 @@
     <MESSAGE value="Init mvc app" />
     <MESSAGE value="Add crud actions" />
     <MESSAGE value="Add entityManagerFactory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add entityManagerFactory" />
+    <MESSAGE value="Final, two daoUser" />
+    <MESSAGE value="task_2.3.1_v1" />
+    <option name="LAST_COMMIT_MESSAGE" value="task_2.3.1_v1" />
   </component>
 </project>
